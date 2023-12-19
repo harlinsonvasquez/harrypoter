@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/login.js"defer></script>
+</head>
+<body>
+    <section class="login interfaz">
+        <header>
+            <h3>Nuevo usuario</h3>
+        </header>
+        <div class="registroDiv">
+            <div class="divImg"><img src="./media/harry-potter.png" alt="userFoto"></div>
+            <div class="formularioContainer">
+                <form method="get" id="formularioLogin" action="./sombrero.html">
+                    <div class="formItem">
+                        <input type="text" name="userName" maxlength="15" >
+                        <label for="userName">Nombre</label>
+                        
+                    </div>
+
+                    <div class="formItem">
+                        <input type="text" name="userFamilia">
+                        <label for="userFamilia">Familia</label>
+                        
+                    </div>
+
+                    <div class="formItem">
+                        
+                        <select name="linaje" id="linaje">
+                            <option value="mestizo">mestizo</option>
+                            <option value="muggle">muggle</option>
+                            <option value="sangrePura">sangre pura</option>
+                        </select>
+                        <label for="linaje">Linaje</label>
+                    </div>
+
+                    <div class="formItem">
+                        <select name="cualidades" id="cualidades">
+                            <option value="gryffindor">valor, fuerza, audacia</option>
+                            <option value="hufflepuff">justicia, lealtad, pertenencia</option>
+                            <option value="ravenclaw">creatividad, erudición, inteligencia</option>
+                            <option value="slytherin">ambición, determinación, astucia</option>
+                        </select>
+                        <label for="cualidades">Cualidades</label>
+                    </div>
+                    
+                    <div class="enviarDiv">
+                        <input type="submit" value="" id="enviar">
+                        <!-- <input type="submit" value="" id="enviar"> -->
+                    </div>
+                    
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

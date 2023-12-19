@@ -1,0 +1,335 @@
+/*-------------------- GLOBAL --------------------*/
+:root{
+    --colorBotonesUser: #719ec4;
+    --colorBotonesFooter: #384c99;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body{
+    background-color: black;
+    color: white;
+    /* overflow: hidden; *//* lo utilizamos para eliminar el scroll */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*-------------------- LOGIN --------------------*/
+.login{
+    height: 100vh;
+}
+
+/*---------- Interfaz ----------*/
+.interfaz{
+   /* background-color: brown; */
+   width: 50%;
+   margin: auto;
+
+   display: flex;
+   flex-direction: column;
+}
+
+header{
+    width: auto;
+    position: relative;
+}
+
+.interfaz header h3{
+    /* background-color: rgb(17, 17, 147); */
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 20px 0px;
+}
+
+.diaClase{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.diaClase p{
+    width: auto;
+    text-align: end;
+    margin-top: 27px;
+}
+
+
+
+/*---------- RegistroDiv ----------*/
+.registroDiv{
+    display: flex;
+}
+/* imagen */
+.divImg{
+    
+    width: 40%;
+    
+}
+
+.divImg img{
+    width: 100%;
+    background-color: rgb(10, 95, 95);
+    border-radius: 50% 70%;
+    
+}
+
+/* formulario */
+.formularioContainer{
+    /* background-color: blueviolet; */
+    width: 60%;
+    padding: 0px 10px;
+}
+
+.formItem{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formItem input, select{
+    background: none;
+    width: 80%;
+    margin: auto;
+    border: none;
+    border-bottom: 1.5px solid blue;
+
+    text-align: center;
+    color: azure;
+}
+
+.formItem select:hover{
+    cursor: pointer;
+}
+
+.formItem select option{
+    color: black;
+}
+
+
+
+.enviarDiv{
+    /* background-color: aquamarine; */
+    text-align: right;
+}
+#enviar {
+    width: 100px;
+    height: 80px;
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+/*---------- Enviar Formulario ----------*/
+/*-------------------- SOMBRERO --------------------*/
+
+.infoDiv{
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.infoContainer{
+    /* background-color: blueviolet; */ 
+    width: 60%;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infoContainer b{
+    margin-bottom: 15px;
+}
+
+/*-------------------- SOMBRERO --------------------*/
+.profeGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px 0px;
+    margin-bottom: 4vw;
+}
+
+.profeContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: end; */
+}
+
+.profePhoto{
+    /* background-color: aqua; */
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+.profeContainer img{
+    width: 60%;
+    border-radius: 50%;
+    /* height: 80%; */
+}
+
+.profeSolitario{
+    /* background-color: aquamarine; */
+    grid-column-start: span 3;
+    width: 100%;
+    height: 50%;
+}
+
+.profeSolitario .profePhoto{
+    /* background-color: aqua; */
+    margin: auto;
+    margin-bottom: 40px;
+    width: 50%;
+    height: 100%;
+
+}
+
+/*-------------------- CLASE SALON --------------------*/
+/*----------- Estadisticas -----------*/
+.estadistica{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 15px;
+    align-items: center;
+}
+
+/*----------- Aula -----------*/
+.salonClase{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: burlywood; */
+    margin-top: 30px;
+    padding: 10px 0px;
+}
+
+.aulaItem{
+    background-color: #719ec4;
+    width: 200px;
+    height: 80px;
+    border-radius: 30px;
+
+    margin: 0px 40px;
+    margin-bottom: 30px;
+    padding: 10px;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-transform: lowercase;
+}
+
+.aulaItem:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*---------- BOTONES ----------*/
+.botones, .botonUnico{
+    /* background-color: aqua;  */
+    width: 100%;
+    height: 80px;
+}
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonUnico{
+    display: flex;
+    justify-content: end;
+}
+
+.botonDinamico{
+    border: none;
+    width: 100px;
+    height: 100%;
+    background-color: var(--colorBotonesFooter);
+}
+
+.botonDinamico:hover{
+    cursor: pointer;
+}
+
+.botones .avanzar{
+    /* background-color: brown; */
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+
+.botones .volver{
+    /* background-color: rgb(127, 131, 25);  */
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%)
+}
+
+.botones .centro{
+    border-radius: 30px;
+}
+
+/*-------------------- TERMINAR JUEGO  --------------------*/
+#pantallaFinal{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    gap: 20px;
+}
+
+#pantallaFinal p{
+    font-size: 0.8rem;
+}
+
+/*----- BONES -----*/
+.finInicioBoton{
+    width: 40%;
+    padding: 20px 0px;
+    margin: auto;
+
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finInicioBoton p{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.finInicioBoton:hover{
+    cursor: pointer;
+}
+
+#iniciarJuego{
+    background-color: #384c99;
+}
+
+#terminarJuego{
+    background-color: rgb(117, 22, 22);
+}
+
+/*----- TIPO FINAL -----*/
+#tipoFinal {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#tipoFinal h3{
+    text-transform: capitalize;
+}
+
+
+
+
+

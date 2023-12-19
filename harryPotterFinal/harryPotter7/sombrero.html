@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/sombrero.js" defer></script>
+
+</head>
+<body>
+    <section class="interfaz">
+        <header>
+            <h3>Sombrero seleccionador</h3>
+            <div class="diaClase">
+                <p id="fechaActual">Dia: 1</p>
+            </div>
+        </header>
+
+        <div class="infoDiv">
+            <div class="divImg"><img src="./media/gorro.png" alt="userFoto"></div>
+
+            <div class="infoContainer">
+                <b>El sombrero seleccionador dice:</b>
+                <p id="textoAceptado">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda officiis placeat distinctio sapiente. Similique consequatur nobis corrupti a eos tenetur, voluptas illo atque eveniet doloribus? Tempore dolor obcaecati dolores repellendus!</p>  
+            </div>
+        </div>
+
+        <footer class="botones botonUnico">
+            <a href="./index.html" hidden>
+                <input type="button" value="" class="volver botonDinamico" >
+            </a>
+
+            <a href="./profesores.html" hidden id="avanzar">
+                <input type="button" value="" class="avanzar botonDinamico" >
+            </a>    
+        </footer>
+
+        <div id="terminarJuego" class="finInicioBoton">
+            <a href="./pantallaFinal.html"><p>TERMINAR JUEGO</p></a>
+        </div>
+    </section>
+</body>
+</html>

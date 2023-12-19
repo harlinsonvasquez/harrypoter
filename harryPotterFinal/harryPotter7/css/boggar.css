@@ -1,0 +1,150 @@
+/*-------- SECTION ---------*/
+.game{
+    display: flex;
+    flex-direction: column;
+}
+
+ /*-------------------- BOGAR --------------------*/
+
+ .peleaBogar{
+    /* background-color: aquamarine; */
+    border: 1px rgb(139, 20, 20) solid;
+    border-radius: 200px;
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 10vw;
+
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.bogarItem{
+    width: 40%;
+    margin: auto;
+    /* height: 100%; */
+    /* background-color: brown; */
+}
+
+.bogarItem img{
+    width: 100%;
+}
+
+.userPhoto{
+    text-align: center;  
+}
+.userPhoto img{
+    width: 55%;
+    border-radius: 50%;
+}
+
+/*---------- PODERES ---------*/
+.botonGrid{
+    /* background-color: rgba(32, 17, 98, 0.587); */
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin: 1.5vw 0px
+}
+
+.gridBotonItem{
+    background-color: rgb(14, 51, 10);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.gridBotonItem:hover{
+    cursor: pointer;
+}
+
+/*-------------------- BOTON  --------------------*/
+.botonNavegation{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.center{
+    background-color: var(--colorBotonesFooter); /* No puedo creer que si  este tomando la propiedad de los otros botones */
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border-radius: 30px;
+
+    grid-column-start: 2;
+    
+    text-align: center;
+}
+
+.center p{
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: black;
+}
+
+.textFooter{
+    grid-column: span 3;
+    text-align: center;
+    
+}
+
+.textFooter p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.input:hover{
+    cursor: pointer;
+}
+
+/*-------------------- PROGRESS BAR  --------------------*/
+
+.progressContainer{
+    /* background-color: aqua; */
+    width: 100%;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 10px;
+}
+
+.progressStatus{
+    background-color: rgb(0, 255, 72);
+    border-radius: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+.progressText{
+    color: black;
+    margin-right: 10px;
+}
+
+/* barra User */
+.userPhoto .progressContainer{
+    margin-bottom: 20px;
+}
+
+.userPhoto .progressStatus{
+    width: 100%;
+}
+
+/* barra Bogar */
+.bogarPhoto .progressContainer{
+    margin-top: 20px;
+}
+
+.bogarPhoto .progressStatus{
+    width: 100%;
+    overflow: hidden;
+    animation: prog 3s linear; 
+}
+
+@keyframes prog {
+    0% {width: 0%}
+    100% {width: 100%}
+}
